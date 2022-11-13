@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 
-/* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
     <>
@@ -29,7 +29,13 @@ export default function Home() {
             </Link>
           </div>
           <div className="hidden lg:col-span-5 lg:flex">
-            <img src="/ezchat.png" className="object-cover" alt="mockup" />
+            <Image
+              src="/ezchat.png"
+              width="450"
+              height="100"
+              alt="ezchat"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
